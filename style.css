@@ -1,0 +1,103 @@
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Times New Roman";
+}
+
+/* navbar */
+.navbar{
+    background-color: #f8f8f8;
+
+}
+.nav-item a{
+    color: #171717;
+}
+/* background image */
+.bg-img{
+    background-image: url("hennala_1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bg-img h1{
+    text-align: center;
+    color: white;
+    padding: 300px;
+}
+
+/* info */
+.info{
+    background-color: #d3d3d3;
+    margin-top: -10px;
+}
+.container p{
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+}
+
+/* Directories */
+.container h2{
+    text-align: center;
+}
+.alphabets{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.directory-content{
+    list-style-type: none;
+}
+
+/* responsiveness */
+@media (min-width: 320px) and (max-width: 480px){
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .bg-img{
+        width: 480px;
+        height: 200px;
+    }
+    .bg-img h1{
+        padding: 100px 10px;
+        position: relative;
+        right: 50px;
+        font-size: 20px;
+    }
+    .container p{
+        width: 100%;
+    }
+    .alphabets{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        right: 25px;
+    }
+
+    /* CSS For only moibile background image */
+    .bg-img{
+        display: none;
+    }
+    .mobile-bg{
+        background-image: url("hennala_mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .mobile-bg h4{
+        color: white;
+        text-align: center;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+
+}
+
+@media (min-width: 501px) {
+    .mobile-bg{
+        display: none;
+    }
+}
